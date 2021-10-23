@@ -73,12 +73,12 @@
 
 	function moveEnemies(){
 		for(idx=0; idx<enemies.length;idx++){
-			enemies[idx].top = enemies[idx].top + 5;
+			enemies[idx].top = enemies[idx].top + 10;
 		}
 	}
 	function moveMissiles(){
 		for(idx=0; idx<missiles.length;idx++){
-			missiles[idx].top = missiles[idx].top - 10;
+			missiles[idx].top = missiles[idx].top - 20;
 		}
 	}
 
@@ -113,7 +113,7 @@
 		moveEnemies();
 		drawEnimies();
 
-		moveEnemies();
+		moveMissiles();
 		drawMissiles();
 
 		setTimeout(gameLoop, 1000)
